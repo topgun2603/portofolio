@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Verification builds (see distDir in next.config.ts) - build output is
+    // not source and linting it reports hundreds of irrelevant errors.
+    ".next-verify/**",
   ]),
 ]);
 
