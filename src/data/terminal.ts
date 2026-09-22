@@ -17,7 +17,7 @@ export const identity = {
   title: "Full-Stack Product Engineer",
   rhythm: ["Build", "Solve", "Ship"],
   mission:
-    "Build practical solutions that solve real problems using modern technologies and AI tools.",
+    "Build practical solutions to real problems, and own the architecture and the decisions behind them.",
   stackLine: "React | Next.js | TypeScript | Firebase | Node.js",
   portraitAlt: "Gowtham Kumar",
   aside: ["Code", "Ideas", "Products", "Impact"],

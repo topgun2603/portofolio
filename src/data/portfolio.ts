@@ -7,14 +7,14 @@ export const profile = {
   name: "Gowtham Kumar",
   initial: "G",
   motto: "BUILD · SOLVE · SHIP",
-  eyebrow: "AI-Assisted . Human-Driven",
+  eyebrow: "Architecture . Decisions . Ownership",
   role: "Full Stack Developer",
   fullName: "Gowtham Kumar",
   /** Two lines under the name; the second one carries the accent colour. */
   roleLines: ["Full-Stack Developer", "Product Engineer"],
   headline: ["I Build Products,", "Not Just Code."],
   intro:
-    "Full-stack developer turning ideas into real-world applications using React, Next.js, TypeScript, Firebase and modern AI tools.",
+    "Full-stack developer turning ideas into real-world applications with React, Next.js, TypeScript and Firebase - and owning the architecture and the decisions behind them.",
   email: "gowthamkumarselvarajofficial@gmail.com",
   /** Shown as written; `whatsapp` below is the same number, dialled. */
   phone: "+91 75388 91944",
@@ -35,7 +35,7 @@ export const heroHighlights = [
   { title: ["Full-Stack", "Delivery"], icon: "stack" },
   { title: ["Fast", "Performance"], icon: "gauge" },
   { title: ["Mobile", "Friendly"], icon: "phone" },
-  { title: ["AI-Assisted", "Workflow"], icon: "sparkles" },
+  { title: ["End-To-End", "Ownership"], icon: "sparkles" },
 ] as const;
 
 export const locations = ["India", "Remote", "Worldwide"] as const;
@@ -375,11 +375,19 @@ export const stats = [
   { value: "100%", label: "Hands-on Development", icon: "star" },
 ] as const;
 
+/**
+ * The About panel.
+ *
+ * Ownership first, tooling second. An earlier draft opened on which AI
+ * assistants get used, which made the assistants the headline of an
+ * engineering identity - the interesting claim is not that he uses AI, it is
+ * that he answers for what ships.
+ */
 export const aiStatement = {
-  title: "Built With AI. Engineered By Me.",
+  title: "Engineered By Me. Built Faster With AI.",
   paragraphs: [
-    "I use AI tools like ChatGPT, Claude and other assistants throughout the development lifecycle — from architecture and implementation to debugging and documentation.",
-    "My role remains the engineer: understanding the problem, making architectural decisions, evaluating solutions, integrating systems, and shipping a product that works.",
+    "I own the architecture, the decisions and the product - how a system is put together, where the data lives, what ships and what does not. That part does not get delegated.",
+    "AI is how I move faster through the work that is typing rather than thinking. It drafts, I decide: I define the problem, choose the shape of the solution, review what comes back, and carry it through to release.",
   ],
 } as const;
 
