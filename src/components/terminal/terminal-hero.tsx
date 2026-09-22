@@ -10,7 +10,7 @@ import { profile } from "@/data/portfolio";
 
 const actions = [
   { label: "View Projects", href: "#projects", Icon: Play },
-  { label: "Download CV", href: profile.resumeUrl, Icon: Download },
+  { label: "Download CV", href: profile.resumeUrl, Icon: Download, save: true },
   { label: "GitHub", href: profile.socials[0].href, Icon: GithubIcon },
   { label: "LinkedIn", href: profile.socials[1].href, Icon: LinkedinIcon },
   { label: "Email Me", href: `mailto:${profile.email}`, Icon: Mail },
@@ -87,12 +87,13 @@ export function TerminalHero() {
           </dl>
 
           <ul className="mt-7 flex flex-wrap gap-3">
-            {actions.map(({ label, href, Icon }) => (
+            {actions.map(({ label, href, Icon, save }) => (
               <li key={label}>
                 <a
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer noopener"
+                  download={save}
                   className="flex items-center gap-2.5 rounded-md border border-border px-4 py-2.5 text-sm text-foreground transition-colors hover:border-term-green/70 hover:bg-term-green/10 hover:text-term-green"
                 >
                   <Icon className="size-4 text-term-green" />

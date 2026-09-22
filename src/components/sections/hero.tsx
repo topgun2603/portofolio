@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   ArrowRight,
+  Download,
   Gauge,
   Globe,
   Layers,
@@ -66,6 +67,17 @@ export function Hero() {
               <a href="#about">
                 <Play className="size-4" />
                 About Me
+              </a>
+            </Button>
+            {/*
+              `download` rather than a plain link: the label says Download, and a
+              PDF that opens in a tab instead leaves the visitor to work out how
+              to keep it.
+            */}
+            <Button asChild size="lg" variant="outline">
+              <a href={profile.resumeUrl} download>
+                <Download className="size-4" />
+                Download CV
               </a>
             </Button>
           </div>

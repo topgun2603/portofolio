@@ -19,7 +19,11 @@ export const profile = {
   /** Shown as written; `whatsapp` below is the same number, dialled. */
   phone: "+91 75388 91944",
   whatsapp: "https://wa.me/917538891944",
-  resumeUrl: "/resume.pdf",
+  /**
+   * The file as it sits in `public/`. Keep the two in step - nothing fails
+   * loudly when they drift, the link just quietly 404s.
+   */
+  resumeUrl: "/gowthamkumar_resume.pdf",
   socials: [
     { label: "GitHub", href: "https://github.com/topgun2603/", icon: "github" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/gowtham-kumar-aa9b87290/", icon: "linkedin" },

@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Clock, Download, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons/brand";
 import { locations, profile } from "@/data/portfolio";
@@ -45,12 +45,20 @@ export function CallToAction() {
           </ul>
         </div>
 
-        <Button asChild size="lg" className="h-14 px-8 text-base font-bold">
-          <a href={`mailto:${profile.email}`}>
-            Get In Touch
-            <ArrowRight className="size-5" />
-          </a>
-        </Button>
+        <div className="flex flex-col gap-3">
+          <Button asChild size="lg" className="h-14 px-8 text-base font-bold">
+            <a href={`mailto:${profile.email}`}>
+              Get In Touch
+              <ArrowRight className="size-5" />
+            </a>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="h-12 px-8">
+            <a href={profile.resumeUrl} download>
+              <Download className="size-4" />
+              Download CV
+            </a>
+          </Button>
+        </div>
 
         <ul className="space-y-4 text-sm lg:justify-self-end">
           <li className="flex items-center gap-3">
